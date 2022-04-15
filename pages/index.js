@@ -24,6 +24,11 @@ function Home({posts}) {
 
   }
   
+  const [sPx, setPX] = useState(true)
+
+  const pinchar = () => setPX(false)
+
+
   return (
     <Layout>
       <h1 className=" text-2xl md:text-5xl font-bold text-text-primary text-center tracking-wide p-4">
@@ -41,11 +46,16 @@ function Home({posts}) {
             id="name"
             type="text"
             placeholder="Search for a script"
-            onChange={(e) => handleFilterBySearch(e.target.value)}            
+            onChange={(e) => handleFilterBySearch(e.target.value)}
+            onClick={pinchar}            
           />
         </div>
 
-        <Categorias />
+        {
+          sPx && (
+            <Categorias />
+          )
+        }
         
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
 		      {filteredPosts.map((post, i) => (
