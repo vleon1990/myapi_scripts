@@ -37,7 +37,6 @@ function Home({posts}) {
         <code className='bg-[#72dd6e]' >your/scripts.x</code>
       </p>
 
-
       <div className="flex justify-center">
           <input
             className="w-full max-w-xl border border-gray-300 p-3 rounded-md my-8 bg-white shadow-md focus:outline-none focus:border-cyan-500 focus:ring-1"
