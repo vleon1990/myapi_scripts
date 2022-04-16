@@ -9,7 +9,6 @@ function Home({posts}) {
     posts.slice(0, 20)
   );
 
-
   function handleFilterBySearch (search) {
 
     if (search.trim().length > 0) {
@@ -27,7 +26,6 @@ function Home({posts}) {
   const [sPx, setPX] = useState(true)
 
   const pinchar = () => setPX(false)
-
 
   return (
     <Layout>
