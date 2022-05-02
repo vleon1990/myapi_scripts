@@ -30,7 +30,7 @@ function Home({posts}) {
   return (
     <Layout>
       <h1 className=" text-2xl md:text-5xl font-bold text-text-primary text-center tracking-wide p-4">
-          Welcome to <a href="https://nextjs.org">scripting!</a>
+          Welcome to <a href="https://myapi-scripts-vleon1990.vercel.app/">scripting!</a>
       </h1>
       <p className=" text-2xl md:text-5xl text-center p-4 tracking-wide">
         Share and search{' '}
